@@ -1,0 +1,61 @@
+{
+  "name": "@userlog/react",
+  "version": "1.0.0",
+  "description": "UserLog client for React applications",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "import": "./dist/index.js",
+    "require": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "private": false,
+  "author": "Michael <michael@8byte.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/getuserlog/react/issues"
+  },
+  "homepage": "https://getuserlog.com",
+  "keywords": [
+    "userlog",
+    "react",
+    "logging",
+    "analytics",
+    "insights",
+    "monitoring",
+    "saas"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch --clean=false",
+    "publish:prod": "npm run build && npm publish",
+    "publish:beta": "npm run build && npm publish --tag beta",
+    "publish:dryrun": "npm run build && npm publish --dry-run"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "typescript": "^5.2.2",
+    "tsup": "^7.2.0"
+  }
+}
