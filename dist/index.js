@@ -2,7 +2,7 @@
 
 import React from "react";
 
-var CDN_URL = "https://app.getuserlog.com/userlog.js";
+var CDN_URL = "https://cdn.getuserlog.com/userlog.js";
 
 /**
  * UserLogProvider-Komponente
