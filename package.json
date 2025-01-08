@@ -1,6 +1,6 @@
 {
   "name": "@userlog/react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "UserLog client for React applications",
   "exports": {
     "types": "./dist/index.d.ts",
@@ -42,8 +42,8 @@
   },
   "dependencies": {},
   "peerDependencies": {
-    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
-    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
+    "react": ">=16.8.0 <20.0.0",
+    "react-dom": ">=16.8.0 <20.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.0",
